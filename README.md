@@ -170,7 +170,4 @@ Execute the SQL queries in `NETFLIX.sql` to solve the 15 business problems.
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
----
-
 ### ⭐ If you found this project useful, consider giving it a star!

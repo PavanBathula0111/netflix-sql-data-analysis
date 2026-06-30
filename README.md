@@ -1,7 +1,7 @@
 # 🎬 Netflix Data Analysis using MySQL
 
 <p align="center">
-  <img src="images/netflix.jpeg" width="900">
+  <img src="netflix.jpeg" width="900">
 </p>
 ## 📌 Project Overview
 

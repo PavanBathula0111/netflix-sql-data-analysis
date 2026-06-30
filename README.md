@@ -115,40 +115,41 @@ During this project, I practiced:
 
 ## 🚀 How to Run
 
-1. Clone this repository.
+### 1. Clone this repository
 
 ```bash
-git clone https://github.com/<your-username>/netflix-sql-data-analysis.git
+git clone https://github.com/PavanBathula0111/netflix-sql-data-analysis.git
 ```
 
-2. Open MySQL Workbench.
+### 2. Navigate to the project directory
 
-3. Create a database.
+```bash
+cd netflix-sql-data-analysis
+```
+
+### 3. Open MySQL Workbench
+
+Create a new database:
 
 ```sql
 CREATE DATABASE Netflix;
 USE Netflix;
 ```
 
-4. Create the table using the schema in `NETFLIX.sql`.
+### 4. Create the table
 
-5. Import `netflix_titles.csv`.
+Run the schema from **NETFLIX.sql**.
 
-6. Run the SQL queries from `NETFLIX.sql`.
+### 5. Import the dataset
 
----
+Import `netflix_titles.csv` into the `netflix_schema` table.
 
-## 📌 Sample Output
+### 6. Run the analysis
 
-Example query:
-
-```sql
-SELECT type, COUNT(*)
-FROM netflix_schema
-GROUP BY type;
-```
+Execute the SQL queries in `NETFLIX.sql` to solve the 15 business problems.
 
 ---
+
 
 ## ⭐ Future Improvements
 

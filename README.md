@@ -93,19 +93,7 @@ netflix-sql-data-analysis/
 ├── NETFLIX.sql
 ├── netflix_titles.csv
 ├── README.md
-└── screenshots/
-    ├── query1.png
-    ├── query2.png
-    └── ...
 ```
-
----
-
-## 📷 Project Preview
-
-<p align="center">
-  <img src="images/netflix-banner.jpg" width="900">
-</p>
 
 ---
 

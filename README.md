@@ -1,9 +1,8 @@
 # 🎬 Netflix Data Analysis using MySQL
 
 <p align="center">
-  <img src="images/netflix-banner.jpg" alt="Netflix Banner" width="900">
+  <img src="images/netflix.jpg" width="900">
 </p>
-
 ## 📌 Project Overview
 
 This project explores the **Netflix Movies and TV Shows** dataset using **MySQL 8.4**. It answers 15 real-world business questions using SQL and demonstrates practical data analysis techniques such as data cleaning, aggregation, window functions, JSON processing, Common Table Expressions (CTEs), and date manipulation.

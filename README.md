@@ -165,9 +165,12 @@ Execute the SQL queries in `NETFLIX.sql` to solve the 15 business problems.
 
 **Pavan Kumar Bathula**
 
-- GitHub: https://github.com/<your-username>
-- LinkedIn: https://linkedin.com/in/<your-linkedin>
+- **GitHub:** https://github.com/PavanBathula0111
+- **LinkedIn:** https://www.linkedin.com/in/pavankumarbathula/
 
+---
+
+⭐ If you found this project useful, consider giving it a star!
 ---
 
 ### ⭐ If you found this project useful, consider giving it a star!

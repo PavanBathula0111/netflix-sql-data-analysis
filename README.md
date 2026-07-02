@@ -3,171 +3,145 @@
 <p align="center">
   <img src="netflix.jpeg" width="900">
 </p>
+
+
+An end-to-end data analytics project that combines **MySQL** for data cleaning and transformation with **Tableau** for building a fully interactive dashboard.
+
+The project demonstrates SQL querying, data preprocessing, view creation, and interactive data visualization using the Netflix Movies & TV Shows dataset.
+
+---
+
 ## 📌 Project Overview
 
-This project explores the **Netflix Movies and TV Shows** dataset using **MySQL 8.4**. It answers 15 real-world business questions using SQL and demonstrates practical data analysis techniques such as data cleaning, aggregation, window functions, JSON processing, Common Table Expressions (CTEs), and date manipulation.
+This project analyzes Netflix content to uncover insights about:
+
+- Movies vs TV Shows
+- Rating distribution
+- Top countries producing Netflix content
+- Most popular genres
+- Top Indian actors
+- Content added over the years
+- Good vs Bad content classification based on descriptions
+
+The dashboard is fully interactive, allowing users to filter all visualizations by selecting any chart.
 
 ---
 
-## 📂 Dataset
+## 🛠️ Tech Stack
 
-- **Source:** Netflix Movies and TV Shows Dataset
-- **Records:** 8,807
-- **Database:** MySQL 8.4
-- **Tool:** MySQL Workbench
-
-### Dataset Columns
-
-- Show ID
-- Type
-- Title
-- Director
-- Cast
-- Country
-- Date Added
-- Release Year
-- Rating
-- Duration
-- Genre (`listed_in`)
-- Description
-
----
-
-## 🛠️ Technologies Used
-
-- MySQL 8.4
-- MySQL Workbench
-- SQL
-
----
-
-## 📚 SQL Concepts Demonstrated
-
-- SELECT Statements
-- WHERE Clause
-- GROUP BY
-- ORDER BY
-- Aggregate Functions
-- CASE Statements
-- Common Table Expressions (CTEs)
-- Window Functions (`RANK()`)
-- JSON_TABLE()
-- String Functions
-- Date Functions
-- Data Cleaning
-- Filtering
-- Pattern Matching (`LIKE`)
-- CAST()
-- TRIM()
-
----
-
-## 📈 Business Problems Solved
-
-1. Count the number of Movies vs TV Shows.
-2. Find the most common rating for Movies and TV Shows.
-3. List all Movies released in a specific year.
-4. Find the top 5 countries with the most Netflix content.
-5. Identify the longest Movie.
-6. Find content added to Netflix in the last 5 years.
-7. Find all Movies and TV Shows directed by **Rajiv Chilaka**.
-8. List all TV Shows with more than 5 seasons.
-9. Count the number of content items in each genre.
-10. Find the top 5 years with the highest percentage of Indian content released on Netflix.
-11. List all Documentary Movies.
-12. Find all content without a director.
-13. Find how many Movies actor **Salman Khan** appeared in during the last 10 years.
-14. Find the top 10 actors who appeared in the highest number of Indian Netflix Movies.
-15. Categorize content as **Good** or **Bad** based on keywords in the description.
+- **Database:** MySQL
+- **Visualization:** Tableau Desktop
+- **Language:** SQL
+- **Dataset:** Netflix Movies & TV Shows
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-netflix-sql-data-analysis/
+📦 netflix-sql-data-analysis
 │
-├── images/
-│   └── netflix-banner.jpg
-│
-├── NETFLIX.sql
-├── netflix_titles.csv
 ├── README.md
+├── NETFLIX.sql                 # SQL analysis queries
+├── netflix_views.sql           # SQL views used in Tableau
+├── Netflix_Dashboard.twbx      # Interactive Tableau dashboard
+├── dashboard.png               # Dashboard preview
+└── netflix_titles.csv          # Dataset
 ```
 
 ---
 
-## 💡 Key Learnings
+# 📊 Interactive Tableau Dashboard
 
-During this project, I practiced:
+## Dashboard Features
 
-- Writing complex SQL queries
-- Solving business problems using SQL
-- Working with real-world datasets
-- Handling comma-separated values using `JSON_TABLE()`
-- Using Window Functions
-- Building Common Table Expressions (CTEs)
-- Data cleaning and transformation
-- Date manipulation in MySQL
-- Converting PostgreSQL queries into MySQL equivalents
+- Interactive cross-filtering across all charts
+- Dashboard actions using related SQL views
+- Netflix-inspired dashboard theme
+- Dynamic tooltips
+- SQL-powered data transformations
+- Relationships using `show_id`
+- Fully interactive visual analytics
 
----
 
-## 🚀 How to Run
+# 📈 Dashboard Visualizations
 
-### 1. Clone this repository
-
-```bash
-git clone https://github.com/PavanBathula0111/netflix-sql-data-analysis.git
-```
-
-### 2. Navigate to the project directory
-
-```bash
-cd netflix-sql-data-analysis
-```
-
-### 3. Open MySQL Workbench
-
-Create a new database:
-
-```sql
-CREATE DATABASE Netflix;
-USE Netflix;
-```
-
-### 4. Create the table
-
-Run the schema from **NETFLIX.sql**.
-
-### 5. Import the dataset
-
-Import `netflix_titles.csv` into the `netflix_schema` table.
-
-### 6. Run the analysis
-
-Execute the SQL queries in `NETFLIX.sql` to solve the 15 business problems.
+- 🎬 Movies vs TV Shows
+- ⭐ Rating Distribution
+- 🌍 Top 5 Countries
+- 🎭 Top Genres
+- 🎬 Top Indian Actors
+- 📅 Content Added by Year
+- 🎞️ Good vs Bad Content Category
 
 ---
 
+# 🗄️ SQL Features
 
-## ⭐ Future Improvements
+- Data Cleaning
+- Data Transformation
+- SQL Views
+- Aggregate Functions
+- CASE Statements
+- Common Table Expressions (CTEs)
+- JSON_TABLE()
+- String Manipulation
+- Date Functions
+- GROUP BY
+- ORDER BY
+- Subqueries
 
-- Create interactive Power BI Dashboard
-- Build Tableau Dashboard
-- Visualize insights using Python (Matplotlib & Seaborn)
-- Perform Exploratory Data Analysis (EDA)
-- Build recommendation analytics
+---
+
+# 📂 SQL Views Used
+
+The Tableau dashboard is powered using custom SQL views:
+
+- `vw_movies_vs_tv`
+- `vw_rating_distribution`
+- `vw_top_countries`
+- `vw_top_genres`
+- `vw_top_indian_actors`
+- `vw_content_by_year`
+- `vw_content_category`
+
+All views are related using **Show ID**, enabling interactive dashboard filtering.
+
+---
+
+# 🚀 Key Insights
+
+- Movies significantly outnumber TV Shows.
+- TV-MA is the most common content rating.
+- The United States contributes the largest share of Netflix content.
+- Dramas and International Movies dominate the catalog.
+- Indian actors frequently appear in Netflix's Indian content.
+- Netflix experienced rapid content growth after 2015.
+
+---
+
+# ▶️ How to Run
+
+1. Import the Netflix dataset into MySQL.
+2. Execute `NETFLIX.sql`.
+3. Execute `netflix_views.sql`.
+4. Open `Netflix_Dashboard.twbx` in Tableau Desktop.
+5. Interact with the dashboard using chart selections and filters.
+
+---
+
+# ⭐ Highlights
+
+- End-to-end analytics project
+- SQL + Tableau integration
+- Interactive dashboard actions
+- Cross-filtering using related data sources
+- Portfolio-ready business dashboard
 
 ---
 
 ## 👨‍💻 Author
 
-**Pavan Kumar Bathula**
+**Pavan Bathula**
 
-- **GitHub:** https://github.com/PavanBathula0111
-- **LinkedIn:** https://www.linkedin.com/in/pavankumarbathula/
-
----
-
-### ⭐ If you found this project useful, consider giving it a star!
+If you found this project helpful, consider giving it a ⭐ on GitHub!
